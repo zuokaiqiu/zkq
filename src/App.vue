@@ -4,10 +4,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-        我是App
+    <el-button type="primary" size="small">主要按钮</el-button>
+    <svg style="width: 30px; height: 30px">
+      <use xlink:href="#icon-vue1" fill="red"></use>
+    </svg>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
