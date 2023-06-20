@@ -1,14 +1,18 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <div>
     <el-button type="primary" size="small">主要按钮</el-button>
-    <svg style="width: 30px; height: 30px">
-      <use xlink:href="#icon-vue1" fill="red"></use>
-    </svg>
+    <svg-icon name="vue1" />
+    <div>
+      <p>测试文本</p>
+    </div>
   </div>
 </template>
+<script setup lang="ts">
+</script>
 
-<style scoped></style>
+
+<style scoped lang="scss">
+p {
+  color: $base-color;
+}
+</style>

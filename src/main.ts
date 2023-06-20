@@ -9,4 +9,11 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import 'virtual:svg-icons-register'
 const app = createApp(App)
 app.use(ElementPlus, { locale: zhCn })
+
+// 引入自定义插件对象：注册整个项目全局组件
+import globalComponent from '@/components'
+app.use(globalComponent)
+
+// 引入全局样式
+import '@/styles/index.scss'
 app.mount('#app')
