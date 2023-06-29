@@ -30,9 +30,9 @@ export default [
     url: '/api/user/login',
     method: 'post',
     response: ({ body }) => {
-      const { userName, password } = body
+      const { username, password } = body
       const checkerUser = createUserList().find(
-        (user) => user.username === userName && user.password === password,
+        (user) => user.username === username && user.password === password,
       )
       if (!checkerUser) {
         return { code: 201, data: { message: '账户或者密码不正确' } }

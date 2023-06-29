@@ -11,8 +11,13 @@ const app = createApp(App)
 app.use(ElementPlus, { locale: zhCn })
 
 // 引入自定义插件对象：注册整个项目全局组件
-import globalComponent from '@/components'
+import globalComponent from './components'
 app.use(globalComponent)
+
+import router from './router'
+import pinia from './store'
+app.use(router)
+app.use(pinia)
 
 // 引入全局样式
 import '@/styles/index.scss'
